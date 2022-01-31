@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        :root{
+            --secondary-colour: rgb(233, 7, 7);
+            --primary-colour:rgb(79, 197, 79);
+            
+        }
+        .container{
+            
+            
+            border: 2px solid red ;
+            width: 500px;
+            background-color: var(--primary-colour);
+            display: flex;
+            height: 500px;
+            
+            align-items: center;
+            
+        }
+        .box{
+            border: 2px solid blue;
+            background-color: var(--secondary-colour);
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            margin: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Home</div>
+        <div class="box" id="box2">About</div>
+        <div class="box" id="box3">Contact US</div>
+    </div>
+    
+</body>
+</html>

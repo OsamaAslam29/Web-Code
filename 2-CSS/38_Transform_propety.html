@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+
+
+        .container{
+            height: 400px;
+            /* width: 200px; */
+            border: 4px solid black;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/1.png.jpg');
+            background-repeat: no-repeat;
+            background-size: 400px 400px;
+    
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 4px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: darkmagenta;
+            transition: all 3s  ease-in;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: rotateX(360deg); */
+            /* transform: rotateY(360deg); */
+            /* transform: scale(2); */
+            /* transform: skew(40deg); */
+            /* transform: translateX(230px); */
+            /* transform: translateY(230px); */
+            transform: translate(130px, 130px);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Osama Aslam From Kasur  Pakistan
+        </div>
+    </div>
+</body>
+</html>

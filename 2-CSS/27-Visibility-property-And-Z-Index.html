@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibiale property + z-index</title>
+</head>
+<style>
+    body{
+        height: 1005px;
+    }
+    .box{
+        border: 2px solid red;
+        height: 120px;
+        width: 120px;
+      
+
+    }
+    #ali1{
+        background-color: green;
+        position: sticky;
+        top: 4px;
+    }
+    
+    #ali2{
+        background-color:white;
+        position: relative;
+        top: 50px;
+        z-index: 50;
+
+    }
+    #ali3{
+        background-color: blue;
+        /* display: none; */
+         /* visibility: hidden;  */
+         position:relative;
+        top: 12px;
+        z-index: 200;
+    }
+    #ali4{
+        background-color:red;
+        z-index: 150;
+       
+    }  
+</style>
+<body>
+    
+   <div class="box" id="ali1">1</div>
+   <div class="box" id="ali2">2</div>
+   <div class="box" id="ali3">3</div>
+   <div class="box" id="ali4">4</div>
+</body>
+</html>

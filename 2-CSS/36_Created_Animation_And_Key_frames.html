@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+.container{
+    border: 2px solid green;
+    height: 300px;
+    width: 500px;
+    background-color: greenyellow;
+}
+.box p{
+
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 2px solid red;
+    background-color: grey;
+    text-align: center;
+
+    animation-name: aslam;
+    animation-iteration-count: 3;
+       animation-duration: 1s;
+       /* animation-timing-function: ease-in-out; */
+       /* animation-delay: 2s; */
+
+    /* animation-fill-mode: alternate; */
+    /* animation-direction: reverse; */
+}
+p img{
+    height: 100px;
+    width: 100px;
+}
+@keyframes aslam{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 100px;
+        left: 0px;
+    }
+    75%{
+        top: 100px;
+        left: 100px;
+    }
+    100%{
+        top: 0px;
+        left: 100px;
+    }
+    
+}
+
+
+/* @keyframes aslam{
+    from{
+         width: 100px;    
+    }
+    to{
+        width: 500px;
+    }
+    
+} */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <din class="box">
+            <!-- <img src="/1.png.jpg" alt="my pic"> -->
+            <p><img src="/1.png.jpg" alt=""></p>
+        </din>
+    </div>
+</body>
+</html>

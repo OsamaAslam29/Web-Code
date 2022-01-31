@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow And text Shadow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            /* border: 2px solid black; */
+            display: flex;
+            height: 237px;
+            text-align: center;
+        }
+        .card{
+            border-radius: 10px;
+            border: 2px solid green;
+            margin: 4px;
+            padding: 20px;
+
+            box-shadow: 4px 5px blue;
+            box-shadow: 4px 5px 5px blue;
+            box-shadow: inset -5px -10px  blue;
+            background-image: url('/1.png.jpg') ;
+            /* background: fixed; */
+            /* background: center center; */
+            /* background-size: 450px 237px; */
+            background-repeat: no-repeat;
+            
+            box-shadow: 4px 5px 5px 10px blue;
+            box-shadow: 4px 5px  10px blue, 5px 5px 5px red;
+
+
+
+            
+
+        }
+        h1{
+            margin-bottom: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 10px 5px 3px  greenyellow;
+        }
+       
+        p{
+            text-shadow: 2px 2px 2px red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+        <h1>This is For Osama</h1>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam illum voluptatem, expedita corrupti obcaecati deserunt aperiam sunt! Molestiae, eos suscipit?</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>This is for Anas</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sint vitae quibusdam repellat eaque ipsam eos saepe blanditiis! Illo, numquam.</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>This is for Rizwan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci nihil, facere quam minima ducimus dignissimos ab facilis ex cumque.</p>
+        </div>
+    </div>
+</body>
+</html>

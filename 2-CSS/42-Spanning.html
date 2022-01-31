@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPANNING</title>
+    <style>
+        .head{
+            display: grid;
+            grid-template-columns: 2fr 2fr 5fr;
+            grid-template-rows:2fr 2fr 5fr;
+            grid-auto-rows: 5fr;
+            grid-column-gap: 8rem;
+            /* grid-gap: 5rem; */
+
+
+            
+        }
+        .item{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 5px;
+            background-color: blue;
+        }
+        .item:first-child{
+             /* grid-column-start: 1; */
+            /* grid-column-end: 3; */
+            grid-row-start: 1;
+             grid-row-end: 8; 
+             /* grid-column: 1 / span 3;  */
+             /* grid-row: 1 / span 5;  */
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="item">box-1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae qui cum nobis veritatis? Neque dolorem, nam accusantium animi unde blanditiis consectetur, incidunt veniam, excepturi explicabo in distinctio consequatur doloremque tempora.</div>
+        <div class="item">box-2</div>
+        <div class="item">box-3</div>
+        <div class="item">box-4</div>
+        <div class="item">box-5</div>
+        <div class="item">box-6</div>
+        <div class="item">box-7</div>
+        <div class="item">box-8</div>
+        <div class="item">box-9</div>
+        <div class="item">box-10</div>
+        <div class="item">box-11</div>
+        <div class="item">box-12</div>
+        <div class="item">box-13</div>
+        <div class="item">box-14</div>
+        <div class="item">box-15</div>
+    </div>
+</body>
+</html>

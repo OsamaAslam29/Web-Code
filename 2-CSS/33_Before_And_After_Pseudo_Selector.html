@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:  0 px;
+            padding: 0 px;
+            /* background-color: chartreuse; */
+            color: rgb(192, 20, 20);
+        }
+
+        header::before{
+            background: url('/1.png.jpg') no-repeat fixed;
+            content: "";
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            
+        }
+        .navigation{
+            display: flex;
+            text-decoration: none;
+            font-family: 'Bree Serif', serif;
+            padding: 23px;
+            
+        }
+        li{
+            list-style: none;
+            padding: 0px 20px;
+        }
+        section{
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            font-family: 'Bree Serif', serif;
+        }
+        p{
+            text-align: center;
+            /* padding: 23px; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h1>Welcome To My Website</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil nemo omnis ex placeat maiores qui dignissimos tenetur repudiandae dolorem aspernatur provident reprehenderit, commodi nulla nobis consequatur! Atque rem quidem illo adipisci voluptatum dicta optio autem enim saepe, voluptatibus maxime nihil?</p>
+    </section>
+</body>
+</html>

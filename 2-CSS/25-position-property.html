@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        body{
+            border: 2px solid green;
+            height: 1005px;
+
+        }
+        .box1{
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+        }
+        .box2{
+            display: inline-block;
+            border: 2px solid red;
+            width:150px;
+            height: 150px;
+            position: sticky;
+            top:2px;
+
+            
+        }
+        
+        .box3{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .box4{
+            border: 2px solid red;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            position: fixed;
+            /* top: 500px; */
+            right: 10px;
+            top: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+</body>
+</html>
