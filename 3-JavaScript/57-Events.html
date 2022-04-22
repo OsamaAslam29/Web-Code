@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        
+            body{
+                background-image: url('/pexels-rene-asmussen-1581384.jpg');
+                 background-size: 100% 100%;
+                background-attachment: fixed;
+        
+            }
+            .navbar{
+                height: 80px;
+                width: 100%;
+                border: 2px solid black;
+                border-radius: 10px;
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+                font-size: 20px;
+                color: black;
+                font-family: sans-serif;
+                
+            }
+            .logo{
+                padding:0px 30px ;
+            }
+            .logo span{
+           color: orangered;
+            }
+            .menu a{
+        
+                text-align: center;
+                text-decoration: none;
+                padding: 0px 30px ;
+        
+            }
+        
+        
+   
+      #btn{
+          border: 2px solid black;
+          padding: 10px 15px;
+          color: white;
+          background-color: black;
+          border-radius:7px ;
+          cursor: pointer;
+      }  
+    
+    </style>
+</head>
+    
+<body>
+                        <!-- Onchange-  An HTML element has been changed
+                    Onclick- The user clicks an HTML element
+                    Onmouseover-   The user moves the mouse over an HTML element
+                    Onmouseout-The user moves the mouse away from an HTML element
+                    Onkeydown- The user pushes a keyboard key
+                    Onload- The browser has finished loading the page -->
+                    <div class="navbar">
+                        <div class="logo">
+                      Nav<span>bar</span>
+                        </div>
+                
+                         <div class="menu">
+                                            <a href="#">Home </a>
+                                            <a href="#">login</a>
+                                            <a href="#">services</a>
+                                            <a href="#">privacy</a>
+                                            <a href="#">help us</a>
+                         </div>
+                    </div>
+
+    <div class="container">
+    <h1>This lecture is about to Events in js</h1>
+    <div id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque consequatur perspiciatis ratione dolorum voluptatem culpa, doloremque doloribus dolorem itaque esse veniam minus veritatis reprehenderit nulla magni maiores, totam delectus ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet dolores quo incidunt, odit harum nisi excepturi quas inventore et? Sequi deleniti fugiat vitae ipsa veritatis odit totam voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas in libero eius id! Ad voluptate illum et! Accusantium aliquam quos maxime delectus! Repellat, minima distinctio perspiciatis expedita possimus corporis aliquid iste deleniti facere, error officiis quod dolor beatae neque eaque! Atque vitae provident iste. Voluptas doloribus ut et nulla cupiditate repudiandae enim atque placeat nisi voluptates molestias eius facilis velit assumenda rem molestiae commodi nobis dicta tempora qui, nostrum vero pariatur! Explicabo asperiores reprehenderit doloribus optio, minima, consequuntur, ex earum aperiam dicta a aspernatur rerum quis natus magnam. Laborum maiores, necessitatibus id voluptates harum ullam exercitationem tenetur nihil assumenda obcaecati itaque sint saepe. Optio quam ipsam quod ducimus natus sequi cupiditate, earum hic debitis recusandae iure quidem sint dignissimos nihil voluptas explicabo magnam. Doloribus, ut, quibusdam odio earum sequi modi sit inventore fugiat quaerat, molestiae ad temporibus asperiores eius illum maxime pariatur id quos recusandae dolores sint? Tenetur voluptatem iste mollitia ut molestiae minus a iure cupiditate dolore omnis modi deleniti saepe beatae vitae libero ipsum doloremque nostrum perspiciatis blanditiis nesciunt molestias, placeat quo quidem facilis! In, assumenda? Autem fugiat molestiae, sapiente similique veniam eaque architecto voluptatum quos aut, ad asperiores cupiditate aspernatur illum quo corporis, harum sit quae nulla.
+    </div>
+    <button id="btn" onclick="toggleHide()"> Hide/Show </button>
+</div>
+
+<script>
+            para.addEventListener('mouseover', function call (){
+                alert('you are on paragraaph')
+            });
+
+            para.addEventListener('mouseout' , function call(){
+                alert('Now you are out the para')
+            })
+
+
+
+
+    function toggleHide(){
+              let btn = document.getElementById('btn')
+              let para = document.getElementById('para')
+    if(para.style.display != 'none'){
+        
+        para.style.display='none';
+    }
+    else{
+        para.style.display='block';
+
+    }
+}
+</script>
+</body>
+</html>

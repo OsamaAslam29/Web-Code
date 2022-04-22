@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+        This is time <span id="time"></span>
+
+    </div>
+    <script>
+        console.log("This is tut 58")
+
+        //      function great(name , text){
+        //      console.log("hello osama " + name + text );
+        // }
+       
+        // setTimeout(great,2000,"take care"," of your self");
+
+        // setTimeoutid= setTimeout(great,2000,"take care"," of your self");
+        // console.log(setTimeoutid);
+        
+        // clearTimeout(setTimeoutid);
+        
+        
+        // setInterval( great,2000,"have a good ", "day");
+
+        // setIntervalid=setInterval( great,2000,"have a good ", "day");
+        // console.log(setIntervalid);
+
+        // clearInterval(setIntervalid);
+        
+
+        function displaytime(){
+            time = new Date();
+            console.log(time)
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displaytime,1000);
+
+    //    another method to print date
+       
+        // function displaydate(){
+            
+        //     time.innerHTML = new Date();
+
+        // }
+
+        // setInterval(displaydate,1000);
+
+    </script>
+</body>
+</html>
