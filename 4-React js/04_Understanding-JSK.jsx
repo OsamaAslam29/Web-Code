@@ -9,7 +9,7 @@
 // Function-based Component:
 //                           In short they are the JavaScript functions. Nowadays, Function-based components are primarily used.
 // Class-based Component: 
-//                      They are  complex than the function-based component as the class     components can work with each other.
+//                      They are  complex than the function-based component as the class   components can work with each other.
 
 // Let’s start our app using the command ‘npm start’ in the terminal of "app.js". Your app will be served at localhost:3000
 
