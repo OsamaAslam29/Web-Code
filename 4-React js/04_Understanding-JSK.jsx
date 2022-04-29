@@ -27,13 +27,14 @@
 //                  This feature makes sure that all the code stays unified to provide the developer with the best possible experience. It ensures that all files aren’t scattered at different locations.
 
 // Some Points to remember while using JSX:
-// You have to write "className" instead of "class" as class is the reserved keyword in Javascript
+//                                       You have to write "className" instead of "class" as class is the reserved keyword in Javascript
 // In place of "for" you have to use "htmlFor"
+
 // JSX fragment feature:
-// With return() we can return only one tag or Element. If you want to return two elements using JSX you have to use the JSX Fragment Feature or wrap the whole content in one element. For example, if we want to return the content of the H1 tag and Div tag together we will be using a JSX fragment ( <>.....</>).
+//                      With return() we can return only one tag or Element. If you want to return two elements using JSX you have to use the JSX Fragment Feature or wrap the whole content in one element. For example, if we want to return the content of the H1 tag and Div tag together we will be using a JSX fragment ( <>.....</>).
 
 // Getting Started with our Own Application:
-// Earlier, We have created the app using the create-react-app package. But now we want to edit the default provided app and create our own application using React. So, Let’s begin-
+//                                      We have created the app using the create-react-app package. But now we want to edit the default provided app and create our own application using React. So, Let’s begin-
 
 // Firstly, remove the provided content of return() of app.js
 
@@ -42,7 +43,8 @@
 
 //     );
 // };
-// Tip: To use emmet abbreviation, Go to the settings and search for ‘Emmet: include languages’ and write javascript in the Item column and javascriptreact in the value column.
+// Tip: 
+//      To use emmet abbreviation, Go to the settings and search for ‘Emmet: include languages’ and write javascript in the Item column and javascriptreact in the value column.
 
 
 
