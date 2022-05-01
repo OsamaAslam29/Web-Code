@@ -1,8 +1,10 @@
  const a = "osama";
- const a1 = "fraz";
- const a2 = "umer";
- const a3 = "aman";
- const a4 = "nadeem";
-
+ const b = "anas";
+ const c = "rizwan";
+ const d = "hassan";
 
  export default a;
+ export {a}; 
+ export {b}; 
+ export {c}; 
+ export {d}; 
