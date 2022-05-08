@@ -5,8 +5,8 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <>
-        {/* <Navbar title="osamaa" feature="Aslam"/> */}
-        <Navbar/>
+        <Navbar title="osama" feature={3}/>
+        {/* <Navbar/> */}
    </>
   );
 }
