@@ -11,12 +11,13 @@ export default function TextForm(props) {
     let newtext = text.toLocaleLowerCase();
     setText(newtext);
   }
+ 
   
   const handleOnChange =(event)=> {
     setText(event.target.value)
     
   }
-  const [text, setText] = useState('Enter your text');  
+  const [text, setText] = useState('');  
     // text="osama"; worng way
     // setText("This is right way");
   return (
