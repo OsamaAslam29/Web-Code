@@ -11,6 +11,24 @@ export default function TextForm(props) {
     let newtext = text.toLocaleLowerCase();
     setText(newtext);
   }
+  const handleClearText =()=> {
+    let newtext = '';
+    setText(newtext);
+  }
+  const handleCaText =()=> {
+        
+      let firstchar = text.charAt(0); // storing the first char of the string
+      let newText= firstchar.toUpperCase(); // converting that to uppercase
+      setText(newText+text.slice(1)); // printing it with rest excluding the first char by using slice
+
+  }
+ 
+  const handleSpText =()=> {
+    let msg = new SpeechSynthesisUtterance();
+    msg.text = text;
+    window.speechSynthesis.speak(msg);
+    
+  }
  
   
   const handleOnChange =(event)=> {
@@ -29,6 +47,9 @@ export default function TextForm(props) {
           </div>
           <div className="btn btn-primary mx-3" onClick={handleUpText}> Convert to UpperCase</div>
           <div className="btn btn-primary mx-3" onClick={handleLoText}> Convert to LowerCase</div>
+          <div className="btn btn-primary mx-3" onClick={handleCaText}>Capital First Letter</div>
+          <div className="btn btn-primary mx-3" onClick={handleSpText}>Speak Text</div>
+          <div className="btn btn-primary mx-3" onClick={handleClearText}>Clear Text</div>
 
     </div>
     <div className="container my-3">

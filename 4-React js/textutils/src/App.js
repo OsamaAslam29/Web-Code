@@ -9,7 +9,7 @@ function App() {
         <Navbar title="TextUtils" feature="about"/>
 
         <div className="container my-3">
-               <TextForm heading="This App is Used to Convert the text into uppercase"/>
+               <TextForm heading="This App is Used To Convert The Text :"/>
        </div>
    </>
   );
