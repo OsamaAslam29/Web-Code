@@ -14,7 +14,7 @@ export default function About(props) {
             if(myStlye.color==='white'){
                 setMyStlye(
                     {
-                        color:"black",
+                        color:"grey",
                         backgroundColor:"white",
                        
                     } );
@@ -24,7 +24,7 @@ export default function About(props) {
                         setMyStlye(
                             {
                                 color:"white",
-                                backgroundColor:"black",
+                                backgroundColor:"grey",
                                 border:'1px solid white'
                         } );
                         setBtnText("Enable Light Mode")
@@ -76,6 +76,11 @@ export default function About(props) {
   <div className="container">
       <button onClick={toggleWord} className="btn btn-primary mx-3 my-3">{btntext} </button>
   </div>
+
+        {/* <div className="form-check form-switch">
+        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+        <label className="form-check-label" onClick={toggleWord} for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div> */}
 </div>
     </div>
   )
