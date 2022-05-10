@@ -1,8 +1,9 @@
-// Understanding State & Handling Events in React | Complete React Course in Hindi #7
-// Till now we have created the navbar of our application and have learned about props. In this tutorial, we will understand State and Handling events. So, let’s continue our journey of React:
+// Understanding State & Handling Events in React
+
+// Till now we have created the navbar of our application and have learned about props. we will understand State and Handling events. So, let’s continue our journey of React:
 
 // Creating Textbox:
-// We are creating a new component named Textform.js in our Components folder. By using ‘rfc’ snippet you can generate a function-based component in "textform.js". Now inside this function, we will render our desired textbox. For example, we are using the textbox from Bootstrap.
+//                  We are creating a new component named Textform.js in our Components folder. By using ‘rfc’ snippet you can generate a function-based component in "textform.js". Now inside this function, we will render our desired textbox. For example, we are using the textbox from Bootstrap.
 
 // While copying anything from Bootstrap, Make sure to do the following changes: 
 
@@ -11,7 +12,7 @@
 // The code must be in one tag or use a JSX fragment.
 
 
-// Figure1.1: Our Textbox in textform.js
+//  Our Textbox in textform.js
 
 // We would also like to attach some buttons in our app which will fire an event on clicking.
 
@@ -28,7 +29,7 @@
 
 
 
-// Figure1.2: Importing and Using Textform
+//  Importing and Using Textform
 
  
 
