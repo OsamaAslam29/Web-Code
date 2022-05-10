@@ -22,6 +22,13 @@ export default function TextForm(props) {
       setText(newText+text.slice(1)); // printing it with rest excluding the first char by using slice
 
   }
+  const handleCoText =()=> {
+        
+      let text =document.getElementById('myBox');
+      text.select();
+      navigator.clipboard.writeText(text.value);
+
+  }
  
   const handleSpText =()=> {
     let msg = new SpeechSynthesisUtterance();
@@ -48,6 +55,7 @@ export default function TextForm(props) {
           <div className="btn btn-primary mx-3" onClick={handleUpText}> Convert to UpperCase</div>
           <div className="btn btn-primary mx-3" onClick={handleLoText}> Convert to LowerCase</div>
           <div className="btn btn-primary mx-3" onClick={handleCaText}>Capital First Letter</div>
+          <div className="btn btn-primary mx-3" onClick={handleCoText}>Copy Text</div>
           <div className="btn btn-primary mx-3" onClick={handleSpText}>Speak Text</div>
           <div className="btn btn-primary mx-3" onClick={handleClearText}>Clear Text</div>
 
