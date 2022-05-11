@@ -6,20 +6,25 @@ export default function TextForm(props) {
   const handleUpText =()=> {
     let newtext = text.toUpperCase();
     setText(newtext);
+    props.showAlert("Converted to UpperCase!","success")
   }
   const handleLoText =()=> {
     let newtext = text.toLocaleLowerCase();
     setText(newtext);
+    props.showAlert("Converted to LowerCase!","success")
   }
   const handleClearText =()=> {
     let newtext = '';
     setText(newtext);
+    props.showAlert("Text Cleared!","success")
   }
   const handleCaText =()=> {
         
       let firstchar = text.charAt(0); // storing the first char of the string
       let newText= firstchar.toUpperCase(); // converting that to uppercase
       setText(newText+text.slice(1)); // printing it with rest excluding the first char by using slice
+      props.showAlert("Capitalize First Letter!","success")
+      
 
   }
   const handleCoText =()=> {
@@ -27,6 +32,7 @@ export default function TextForm(props) {
       let text =document.getElementById('myBox');
       text.select();
       navigator.clipboard.writeText(text.value);
+      props.showAlert("Text Copied!","success")
 
   }
  
