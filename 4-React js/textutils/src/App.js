@@ -9,8 +9,8 @@ import TextForm from './components/TextForm';
 
 function App() {
 
-  const [mode, setMode] = useState('light'); 
-  const [alert, setAlert] = useState(null); 
+ 
+  const [alert, setAlert] = useState(null); // This state is for Alert
 
   const showAlert =(messgae,type)=>{
     setAlert({
@@ -19,22 +19,31 @@ function App() {
     });
     setTimeout(() => {
         setAlert(null)
-    }, 2000);
+    },  2000);
   }
 
-  let toggleMode =()=>{
-    if(mode==='light'){
-      setMode('dark')
-      document.body.style.backgroundColor='grey'
-      showAlert('Enable Dark Mode','success')
-        }
-    else{
-      setMode('light')
-      document.body.style.backgroundColor='white'
-      showAlert('Enable light Mode','success')
+  const [mode, setMode] = useState('light'); // This state is for controlind mode
+            
+        let toggleMode =()=>{
+              if(mode==='light'){
+                setMode('dark')
+                document.body.style.backgroundColor='grey'
+                showAlert('Enable Dark Mode','success');
+                document.title='TextUtils - Dark Mode';
+                setInterval(() => {
+                  document.title='TextUtils is Amazing';
+                }, 1000);
+                setInterval(() => {
+                  document.title='Install TextUtils Now';
+                }, 1500);
+                  }
+            else{
+              setMode('light')
+              document.body.style.backgroundColor='white'
+              showAlert('Enable light Mode','success');
+              document.title='TextUtils - Light Mode';
 
-
-        }
+}
   }
   return (
     <>
