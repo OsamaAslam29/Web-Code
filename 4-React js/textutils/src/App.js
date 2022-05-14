@@ -1,13 +1,21 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
-import About from './components/About';
 import Navbar from './components/Navbar';
-import Alert from './components/Alert';
+import About from './components/About';
 import TextForm from './components/TextForm';
+import Alert from './components/Alert';
 
 
-function App() {
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
+function App() {           //      Functionality 
 
  
   const [alert, setAlert] = useState(null); // This state is for Alert
@@ -45,16 +53,26 @@ function App() {
 
 }
   }
+  //      --------------------------------------------------------------- link components
   return (
     <>
-        <Navbar title="TextUtils" feature="about"  mode={mode} toggleMode={toggleMode}/>
-        <Alert alert={alert}/>
+     
+              <Navbar title="TextUtils" feature="about"  mode={mode} toggleMode={toggleMode}/>
+              <Alert alert={alert}/>
        <div className="container my-3">
-            <TextForm showAlert={showAlert} heading="This App is Used To Convert The Text :    " mode={mode}/>
-       </div>
-                 <hr />
-       <About heading="About Us" />
-       <hr />
+       <Switch>
+              <Route exact path="/about">
+                <About />
+              </Route>
+          
+              <Route exact path="/">
+                  <TextForm showAlert={showAlert} heading="This App is Used To Convert The Text :    " mode={mode}/> 
+              </Route>
+        </Switch>
+        </div>
+       
+              
+      
    </>
   );
 }
