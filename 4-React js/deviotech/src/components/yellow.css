@@ -1,0 +1,86 @@
+.yellow_background{
+    height: 400px;
+    background-color: #fc3;
+    margin-top: 50px;
+}
+.brush img{
+    width: 475px;
+    height: 60px;
+    display: flex;
+    margin: 80px auto;
+    margin-bottom: 20px;
+}
+.brush_content{
+    font-size: 32px;
+    font-weight: 700;
+}
+.yellow_brush{
+    position: relative;
+    max-width: 1060px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+}
+.brush_content{
+    position: absolute;
+    top: 13px;
+    left: 325px;
+}
+.brush_para{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+}
+.brush_card{
+    max-width: 1060px;
+    margin: -4rem auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.first_card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.brush_heading{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+.brush_heading span{
+    font-size: 13px;
+    font-weight: 600;
+}
+.yellow_border{
+    height: 2px;
+    width: 30px;
+    background-color: #fc3;
+    margin: 0.5rem 201px;
+    text-align: center;
+
+}
+.yellow_para{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    max-width: 470px;
+}
+.more{
+    font-size: 13px;
+    height: 40px;
+    width: 129px;
+    vertical-align: cen;
+    display: flex;
+    border: 2px solid #000;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    margin-left: 155px
+}

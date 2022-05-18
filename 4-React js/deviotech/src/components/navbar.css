@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+    align-items: center;
+}
+.Navbar_Container{
+    background-color: #fc3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 68px;
+    padding: 1rem 2rem;
+
+}
+
+.logo img{
+    height: 35px;
+}
+.menu_Bar a{
+    text-decoration: none;
+    margin-right: 27px;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}
+.icon img{
+    height: 24px;
+    margin-left: 20px ;
+}
+.content{
+    margin-left: 25px ;
+}
+.upper{
+    line-height: 30px;
+}
+.lower{
+    font-size: 20px;
+    font-weight: 700;
+
+}

@@ -1,0 +1,56 @@
+.head{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 36px;
+    margin-bottom: 10px;
+
+}
+.head span{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #fc3;
+}
+.tail{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+.rating img{
+    font-size: 16px;
+    display: block;
+    margin: 5px auto;
+    height: 10px;
+}
+.image1 img{
+    height: 185px;
+    width: 187px;
+}
+.panel1{
+    height: 310px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+.text_heading{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+}
+.text_heading span{
+    font-size: 11px;
+}
+.star_panel{
+    display: flex;
+    margin-left: 180px;
+}
+.again_flex{
+    margin-left: 180px;
+    display: flex;
+}
