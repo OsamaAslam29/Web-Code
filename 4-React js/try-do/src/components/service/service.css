@@ -1,0 +1,39 @@
+.flex{
+    padding: 100px 0px;
+}.service_cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    max-width: 21.3%;
+    margin-top: 30px;
+    background: #f6f6f6;
+    padding: 50px 60px;
+    border-radius: 10px;
+}
+.card:hover{
+    color: white;
+    background-color:rgb(235, 31, 65) ;
+}
+.card:hover .card_para {
+    background-color:rgb(235, 31, 65) ;
+    color: white;
+}
+.card:hover .icon {
+    background-color:rgb(235, 31, 65) ;
+    color: white;
+}
+
+.card_content{
+    font-size: 21px;
+    font-weight: bold;
+}
+.card_para{
+    font-size: 20px;
+    color: rgba(29,29,36,.75);
+}
+.icon{
+    font-size: 70px;
+    color: rgb(235, 31, 65);
+}

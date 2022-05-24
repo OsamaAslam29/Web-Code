@@ -10,9 +10,9 @@ export default function Tutor() {
   return (
     <div className="background_color">
         <div className="white_background">
-            <img src={white} alt="error" />
-        </div>
         <div className="upper_bottom_content">Find A Tutor <br /><span>what do you want to Learn</span></div>
+         
+        </div>
         
         <div className="cards">
             <div className="tutor-cards">

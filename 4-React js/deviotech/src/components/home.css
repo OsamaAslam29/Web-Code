@@ -1,16 +1,17 @@
 
 .container{
     position: relative;
-}.background_image img{
-    height: 190px;
+    height: 250px;
     width: 100%;
+    background-position-y: bottom;
+    background-image: url(./pics/home.png);
 }
 .home_content{
     
     display: flex;
     position: absolute;
     top: 75px;
-    left: 150px;
+    left: 11.5%;
     gap: 0.6rem;
 }
 .heading{

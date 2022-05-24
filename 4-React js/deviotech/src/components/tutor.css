@@ -1,25 +1,40 @@
 .background_color{
-    height: 550px;
+    
     width: 100%;
     background-color:  #fc3;
     position: relative;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
 .white_background {
-    height: 230px;
+    width: 315px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(./pics/white.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
-.white_background img {
-    width: 315px;
-    height: 60px;
-}
+
+
+
+
+
 .upper_bottom_content{
     font-size: 32px;
     font-weight: 700;
-    position: absolute;
-    top: 100px;
-    left: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    
 
 }
 .upper_bottom_content span{
@@ -37,6 +52,12 @@
     gap: 3rem;
 
 }
+@media(max-width:990px){
+    .cards{
+        flex-direction:column;
+    }
+}
+
 .tutor-cards{
     background-color: #fff;
     height: 230px;
@@ -61,8 +82,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px auto;
+    margin: 30px 50px;
     height: 55px;
+
 }
 .data{
     text-align: center;

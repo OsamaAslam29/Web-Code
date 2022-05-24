@@ -1,7 +1,15 @@
 nav{
     display: flex;
     align-items: center;
+    width: 100%;
+    position: relative;
 }
+@media(max-width:990px){
+    nav{
+     background-color: #fc3 !important;
+    }
+}
+
 .Navbar_Container{
     background-color: #fc3;
     display: flex;
@@ -13,28 +21,114 @@ nav{
 
 }
 
+@media(max-width:990px){
+    .Navbar_Container{
+      width: 100%;
+    }
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    gap: 27px;
+}
+
+@media(max-width:990px){
+    .phone{
+      display: none;
+    }
+}
+
 .logo img{
     height: 35px;
 }
-.menu_Bar a{
-    text-decoration: none;
-    margin-right: 27px;
+.menu_Bar {
+ display: flex;
     color: black;
     font-size: 15px;
     font-weight: 700;
+    gap: 27px;
 }
+.nav{
+    color: black;
+    text-decoration: none;
+}
+.active{
+    color: red;
+}
+
+@media(max-width:1050px){
+    .menu_Bar{
+        gap: 15px;
+    }
+}
+@media(max-width:990px){
+    .menu_Bar{
+      display: none;
+    }
+}
+
 .icon img{
     height: 24px;
-    margin-left: 20px ;
+  
 }
-.content{
-    margin-left: 25px ;
+
+@media(max-width:1300px){
+    .icon img{
+      height: 15px;
+    }
 }
 .upper{
     line-height: 30px;
+}
+@media(max-width:1300px){
+    .uper{
+     line-height: 20px;
+    }
 }
 .lower{
     font-size: 20px;
     font-weight: 700;
 
+}
+
+@media(max-width:1300px){
+    .lower{
+      font-size: 15px;
+    }
+}
+
+
+.ham_burger{
+    display: none;
+}
+
+ @media(max-width:990px){
+    .ham_burger{
+        display: block;
+        background-color: #fc3;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} 
+
+.menu{
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+
+
+/* mobile navbar  */
+
+
+.close{
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
 }

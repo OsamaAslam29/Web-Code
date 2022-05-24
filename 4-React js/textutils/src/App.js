@@ -59,17 +59,18 @@ function App() {           //      Functionality
      
               <Navbar title="TextUtils" feature="about"  mode={mode} toggleMode={toggleMode}/>
               <Alert alert={alert}/>
-       <div className="container my-3">
+
+       {/* <div className="container my-3"> */}
        <Switch>
               <Route exact path="/about">
-                <About />
+                  <About />
               </Route>
           
               <Route exact path="/">
                   <TextForm showAlert={showAlert} heading="This App is Used To Convert The Text :    " mode={mode}/> 
               </Route>
-        </Switch>
-        </div>
+       </Switch>
+        {/* </div> */}
        
               
       
